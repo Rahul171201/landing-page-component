@@ -6,11 +6,12 @@
 }
 
 .navbar {
+  width: 100%;
   min-height: 20vh;
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 0 60px;
+  padding-left: 20px;
 }
 
 .bodyBox {
@@ -89,7 +90,7 @@
 .iconBar {
   display: flex;
   width: 90%;
-  margin-top: 300px;
+  margin-top: 150px;
   justify-content: right;
   align-items: right;
 }
@@ -105,24 +106,30 @@
 
 @media (max-width: 900px) {
   .navbar {
-    width: 50vw;
   }
 
   .bodyBox {
+    width: 100%;
     flex-direction: column;
-    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    width: 140%;
   }
 
   .leftBox {
-    border: 1px solid black;
     width: 100%;
   }
 
-  .iconBar {
-    width: 80%;
-    margin-top: 100px;
+  .rightBox {
+    margin-top: -100px;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    text-align: center;
+  }
+
+  .iconBar {
   }
 }
