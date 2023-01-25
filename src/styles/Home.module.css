@@ -1,0 +1,128 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+}
+
+.navbar {
+  min-height: 20vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.bodyBox {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+.leftBox {
+  width: 50%;
+  min-height: 80vh;
+  padding: 0 80px;
+}
+
+.rightBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  color: white;
+  padding: 20px 40px;
+}
+
+.imageContainer {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.descriptionHeader {
+  line-height: 1.2;
+  font-size: 3rem;
+  width: 80%;
+}
+
+.descriptionBody {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: rgb(235, 228, 228);
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.descriptionButton {
+  border: none;
+  width: 220px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.descriptionButton:hover {
+  color: white;
+  background-color: hsl(258, 55%, 34%);
+  border: 1px solid hsl(256, 42%, 17%);
+}
+
+.iconBar {
+  display: flex;
+  width: 90%;
+  margin-top: 300px;
+  justify-content: right;
+  align-items: right;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    width: 50vw;
+  }
+
+  .bodyBox {
+    flex-direction: column;
+    width: 50vw;
+  }
+
+  .leftBox {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .iconBar {
+    width: 80%;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+}
